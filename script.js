@@ -14,7 +14,8 @@ const getSum = () => {
 		sum = sum+parseInt(price[i].textContent);
 	}
 	
-	td1.textContent = `Total : ${sum}`
+	td1.textContent = `Total : ${sum}`;
+	tr.setAttribute('id','ans');
 	// td2.textContent = sum;
 	let table = document.getElementsByTagName("table");
 	tr.appendChild(td1)
